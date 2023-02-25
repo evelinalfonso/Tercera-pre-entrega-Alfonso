@@ -7,13 +7,13 @@ class ProductosFormulario(forms.Form):
     precio= forms.IntegerField()
     marca = forms.CharField(max_length=40)
 
-class ClientesFormulario(forms.Model):
+class ClientesFormulario(forms.Form):
 
     nombre= forms.CharField(max_length=30)
     apellido= forms.CharField(max_length=30)
     mail = forms.EmailField()
 
-class ProveedoresFormulario(forms.Model):
+class ProveedoresFormulario(forms.Form):
 
     nombre= forms.CharField(max_length=30)
     apellido= forms.CharField(max_length=30)

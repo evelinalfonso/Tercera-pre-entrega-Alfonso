@@ -9,12 +9,48 @@
 <body>
     
     
-    {% for Clientes in todos %}
+    <form action="{% url 'crearCliente' %}" method="POST"> {% csrf_token %} # El action debe coincidir con el name que dimos en urls.py
 
-    {{Cliente.nombre}}
 
-    {% endfor %} 
-    
+
+        <table>
+
+        
+
+            {{ miFormulario.as_table }}
+
+            
+
+        </table>
+
+        
+
+        <input type="submit", value="Enviar">
+
+        
+
+        </form> <form action="{% url 'crearCliente' %}" method="POST"> {% csrf_token %}  
+            #El action debe coincidir con el name que dimos en urls.py
+
+
+
+        <table>
+
+        
+
+            {{ miFormulario.as_table }}
+
+            
+
+        </table>
+
+        
+
+        <input type="submit", value="Enviar">
+
+        
+
+        </form> 
 
 
 </body>
